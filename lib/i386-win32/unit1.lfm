@@ -1,0 +1,56 @@
+object Form1: TForm1
+  Left = 407
+  Height = 257
+  Top = 192
+  Width = 633
+  Caption = 'Webcam Snapshot'
+  ClientHeight = 257
+  ClientWidth = 633
+  LCLVersion = '1.6.4.0'
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 104
+    Caption = 'Open Camera'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 8
+    Height = 210
+    Top = 40
+    Width = 304
+    BevelOuter = bvLowered
+    TabOrder = 1
+    OnClick = Panel1Click
+  end
+  object Button2: TButton
+    Left = 320
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Capture'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object MyPaintBox: TPaintBox
+    Left = 320
+    Height = 208
+    Top = 40
+    Width = 304
+  end
+  object Button3: TButton
+    Left = 400
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Save'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    left = 379
+    top = 126
+  end
+end
